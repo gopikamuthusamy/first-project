@@ -1,0 +1,244 @@
+   .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #355C7D ;
+    color: white;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    width: 150px;
+    height: auto;
+  }
+  
+  .navbar-center {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+  }
+  
+  .navbar-search {
+    position: relative;
+    width: 600px;
+  }
+  .icon-image {
+    width: 20px; /* Set the width of the image */
+    height: 20px; /* Set the height of the image */
+    border-radius: 50%; /* Optional: Make the image circular */
+    /* background-color: #f0f0f0; */
+    padding: 0px; /* Optional: Add padding inside the circular background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow */
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #f51010;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 135px;
+  }
+  
+  .icon {
+    font-size: 24px;
+    color: rgb(55, 198, 110);
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .user-initials {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f90;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .dropdown-item i {
+    font-size: 20px; /* Increase icon size */
+    color: #666; /* Icon color */
+  }
+  
+  .dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s ease-in-out;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 0; /* Remove rounded corners */
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 1000;
+    width: 350px;
+    border-radius: 0; /* Remove rounded corners */
+  }
+  
+  .logout-button {
+    width: 100%;
+    text-align: center;
+    border: none;
+    background: none;
+    color: red;
+    font-size: 14px;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: background 0.2s;
+    height: 50px; /* Match height with dropdown items */
+  }
+  
+  .dropdown-item div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .dropdown-item span {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .dropdown-subtext {
+    font-size: 12px;
+    color: #888;
+    margin-top: 2px;
+  }
+  
+  .dropdown-item:hover, .logout-button:hover {
+    background-color: #f9f9f9;
+  }
+  .logout-button {
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    color: rgb(50, 148, 218); /* Your custom color */
+    font-size: 14px;
+    height: 50px; /* Match the height with other dropdown items */
+    width: 100%; /* Ensure it spans the full width */
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .logout-button:hover {
+    background-color: #f9f9f9; /* Optional hover effect */
+  }
+  .wishlist-container {
+    position: absolute; /* Position it relative to the carousel-container */
+    top: 10px; /* Distance from the top */
+    right: 0px; /* Increased distance from the right */
+  }
+  
+  
+  .wishlist-icon {
+    font-size: 24px; /* Set size of the heart icon */
+    color: #ff4081; /* Set color for the heart icon */
+    cursor: pointer; /* Change cursor to pointer when hovering */
+    transition: color 0.3s; /* Smooth transition for color change */
+  }
+  
+  .wishlist-icon:hover {
+    color: #e91e63; /* Color change when hovered */
+  }
+  
+  .search-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 100;
+  }
+  
+  .recent-searches {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .suggestion-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .clear-all {
+    font-size: 12px;
+    color: #007bff;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .trending-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .trending-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .trending-item:last-child {
+    border-bottom: none;
+  }
+  
+  .item-name {
+    font-weight: bold;
+  }
+  
+  .item-color {
+    display: block;
+    font-size: 12px;
+    color: gray;
+  }
+  
+  .item-delivery {
+    font-size: 12px;
+    color: green;
+  }
+  

@@ -1,0 +1,112 @@
+/* Form Overlay */
+.form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form Container */
+.form-container {
+  background: white;
+  padding: 20px;
+  width: 400px;
+  position: relative; /* Important for positioning the close button */
+  border-radius: 8px;
+  color:#333;
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 5px; /* Adjusted to move closer to the top */
+  right: 5px; /* Adjusted to move closer to the right */
+  background: transparent;
+  border: none;
+  font-size: 16px; /* Smaller size */
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s;
+  padding: 5px; /* Smaller padding */
+  width: 20px;
+  height: 20px;
+}
+
+.close-button:hover {
+  color: red; /* Changes color on hover */
+}
+
+/* Input Groups */
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Input Fields */
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+/* Icon in Input Fields */
+.input-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 10px 10px 35px; /* Padding to the left for icon */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.input-group .icon {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #333;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Links (Signup/Login) */
+.signup-link, .login-link {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.signup-text, .login-text {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.signup-text:hover, .login-text:hover {
+  color: darkblue;
+}
